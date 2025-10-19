@@ -80,10 +80,4 @@ CREATE TABLE PedidoItens (
     CONSTRAINT fk_item_produto FOREIGN KEY (id_produto) REFERENCES Produtos(id_produto)
 );
 
--- Adicionando alguns comentários para o seu entendimento
--- AUTO_INCREMENT: Gera um número único para cada novo registro.
--- PRIMARY KEY: Identificador único da tabela.
--- FOREIGN KEY: Cria um vínculo entre tabelas.
--- UNIQUE: Garante que não haja valores duplicados na coluna (ex: CPF, CNPJ).
--- ENUM: Limita os valores possíveis para uma coluna.
 -- ON DELETE CASCADE: Se um cliente for removido, suas formas de pagamento e entregas associadas também serão.
